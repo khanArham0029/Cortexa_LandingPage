@@ -13,7 +13,7 @@ export function Pilot() {
         <p className="label col-span-12 mb-8">§ 05 — Pilot</p>
         <RevealLines
           as="h2"
-          className="display col-span-12 text-giant"
+          className="display col-span-12 text-[clamp(3.1rem,12.2vw,14.5rem)] whitespace-nowrap"
           lines={["One store.", "One box.", "Your cameras."]}
           lineClassName={(i) => (i === 1 ? "md:pl-[2.1em]" : i === 2 ? "md:pl-[0.7em]" : "")}
         />

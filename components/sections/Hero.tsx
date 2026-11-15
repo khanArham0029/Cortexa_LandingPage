@@ -8,7 +8,7 @@ import { PilotButton } from "../motion/PilotButton";
 import { RevealLines } from "../motion/RevealLines";
 import { EASE_HEAVY, SPRING_SCROLL, fadeUp, ruleDraw, stagger } from "../motion/variants";
 
-const HEADLINE = "whitespace-nowrap text-[clamp(3rem,14.1vw,17.5rem)]";
+const HEADLINE = "whitespace-nowrap text-[clamp(3.6rem,16.5vw,20.5rem)]";
 
 export function Hero() {
   const ref = useRef<HTMLElement>(null);

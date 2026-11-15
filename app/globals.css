@@ -13,7 +13,7 @@
   --color-signal: #ff4d00;
 
   /* Typefaces are loaded in app/layout.tsx and exposed as variables. */
-  --font-display: var(--font-archivo), "Arial Black", "Helvetica Neue", sans-serif;
+  --font-display: var(--font-bricolage), "Helvetica Neue", Arial, sans-serif;
   --font-serif: var(--font-instrument), "Times New Roman", serif;
   --font-mono: var(--font-jetbrains), ui-monospace, "SFMono-Regular", monospace;
   --font-sans: var(--font-archivo), "Helvetica Neue", Arial, sans-serif;
@@ -25,11 +25,11 @@
   --text-large: clamp(2rem, 4.2vw, 4.25rem);
   --text-label: 0.6875rem;
 
-  --tracking-crush: -0.065em;
+  --tracking-crush: -0.05em;
   --tracking-tight: -0.04em;
   --tracking-label: 0.14em;
 
-  --leading-crush: 0.8;
+  --leading-crush: 0.82;
   --leading-slab: 0.88;
 
   /* Motion. Nothing overshoots. Things arrive like they have mass. */
@@ -58,7 +58,6 @@
 
   body {
     font-family: var(--font-sans);
-    font-variation-settings: "wdth" 100;
     font-size: 1rem;
     line-height: 1.45;
     overflow-x: clip;
@@ -96,11 +95,12 @@ html.lenis body {
    Type roles
 ------------------------------------------------------------------- */
 
-/* Brutalist slab: Archivo at full weight, widened, tracked until it hurts. */
+/* Headline voice: Bricolage Grotesque, heavy and tightly tracked. */
 @utility display {
   font-family: var(--font-display);
-  font-weight: 900;
-  font-variation-settings: "wdth" 112;
+  font-weight: 800;
+  font-optical-sizing: auto;
+  font-variation-settings: "wdth" 100;
   letter-spacing: var(--tracking-crush);
   line-height: var(--leading-crush);
   text-transform: uppercase;
@@ -110,7 +110,8 @@ html.lenis body {
 /* Same face, narrowed. Used where a slab has to share a line. */
 @utility display-tight {
   font-family: var(--font-display);
-  font-weight: 800;
+  font-weight: 700;
+  font-optical-sizing: auto;
   font-variation-settings: "wdth" 88;
   letter-spacing: var(--tracking-tight);
   line-height: var(--leading-slab);

@@ -29,7 +29,7 @@ export function Refusals() {
             <div className="col-span-12 md:col-span-9">
               <span className="line-mask">
                 <motion.span
-                  className="display relative inline-block text-[clamp(1.75rem,5.6vw,6.75rem)] whitespace-nowrap"
+                  className="display relative inline-block text-[clamp(2.1rem,6.9vw,8.25rem)] whitespace-nowrap"
                   variants={lineRise}
                 >
                   {item.text}

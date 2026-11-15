@@ -46,7 +46,7 @@ export function Principles() {
       <div className="sheet mt-28 md:mt-48">
         <RevealLines
           as="h2"
-          className="display col-span-12 text-[clamp(2.4rem,8.6vw,10.5rem)] whitespace-nowrap"
+          className="display col-span-12 text-[clamp(2.9rem,10.4vw,12.75rem)] whitespace-nowrap"
           lines={["Four rules.", "No exceptions."]}
           lineClassName={(i) => (i === 1 ? "md:pl-[1.15em]" : "")}
         />

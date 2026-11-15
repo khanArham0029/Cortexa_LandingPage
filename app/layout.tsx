@@ -1,15 +1,22 @@
 import type { Metadata, Viewport } from "next";
-import { Archivo, Instrument_Serif, JetBrains_Mono } from "next/font/google";
+import { Archivo, Bricolage_Grotesque, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import type { ReactNode } from "react";
 import { SmoothScroll } from "@/components/motion/SmoothScroll";
 import { site } from "@/lib/site";
 import "./globals.css";
 
-// Brutalist slab. The width axis is what lets one family do both the
-// widened headline cut and the condensed sub-heads.
+// Display face. A grotesque with some warmth in its curves, so the big type
+// stays loud without shouting. The optical-size axis tightens it at scale.
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  axes: ["opsz", "wdth"],
+  variable: "--font-bricolage",
+  display: "swap",
+});
+
+// Body copy.
 const archivo = Archivo({
   subsets: ["latin"],
-  axes: ["wdth"],
   variable: "--font-archivo",
   display: "swap",
 });
@@ -42,7 +49,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${archivo.variable} ${instrument.variable} ${jetbrains.variable}`}>
+    <html lang="en" className={`${bricolage.variable} ${archivo.variable} ${instrument.variable} ${jetbrains.variable}`}>
       <body>
         <SmoothScroll />
         {children}

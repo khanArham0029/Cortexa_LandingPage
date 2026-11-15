@@ -115,7 +115,7 @@ export function FeatureExplorer() {
             <p className="label mb-6 text-ink/60">§ 02 — Reports</p>
             <RevealLines
               as="h2"
-              className="display text-[clamp(3rem,5.2vw,6.25rem)] whitespace-nowrap"
+              className="display text-[clamp(3.5rem,6.5vw,7.75rem)] whitespace-nowrap"
               lines={["What", "the box", "reports."]}
               lineClassName={(i) => (i === 1 ? "pl-[0.7em]" : "")}
             />

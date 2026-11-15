@@ -24,7 +24,7 @@ pnpm build
 | Path                   | Contents                                                              |
 | ---------------------- | --------------------------------------------------------------------- |
 | `app/globals.css`      | Design tokens (`@theme`), type roles, grid, grain                     |
-| `app/layout.tsx`       | Fonts: Archivo (display), Instrument Serif (accent), JetBrains Mono   |
+| `app/layout.tsx`       | Fonts: Bricolage Grotesque, Archivo, Instrument Serif, JetBrains Mono |
 | `components/motion/`   | Motion variants and primitives: line reveal, magnetic, parallax       |
 | `components/sections/` | One file per page section                                             |
 | `components/hero/`     | The live counting-line floor in the hero                              |

@@ -71,7 +71,7 @@ export function Footer() {
         viewport={{ once: true, margin: "0px 0px -10% 0px" }}
         transition={{ staggerChildren: 0.06 }}
       >
-        <div className="display flex justify-between overflow-hidden pt-[0.06em] text-[16.7cqw] !leading-[0.74] !tracking-normal">
+        <div className="display flex justify-between overflow-hidden pt-[0.06em] text-[22.8cqw] !leading-[0.74] !tracking-normal">
           {LETTERS.map((letter, i) => (
             <motion.span
               key={i}
